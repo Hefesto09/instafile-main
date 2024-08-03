@@ -16,12 +16,15 @@ if (!file_exists($carpetaRuta)) {
 
 // Luego, cuando se procese un archivo, guárdalo en la carpeta creada
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $archivo = $_FILES['archivo'];
+    foreach ($_FILES['archivo']['name'] as $key => $nombreOriginal) {
+        $archivo = $_FILES['archivo']['tmp_name'][$key];
+        $nombreLimpio = preg_replace('/\s+/', '_', $nombreOriginal);
 
-    if (move_uploaded_file($archivo['tmp_name'], $carpetaRuta . '/' . $archivo['name'])) {
-        echo "Archivo subido con éxito.";
-    } else {
-        echo "Error al subir el archivo.";
+        if (move_uploaded_file($archivo, $carpetaRuta . '/' . $nombreLimpio)) {
+            echo "Archivo $nombreLimpio subido con éxito.";
+        } else {
+            echo "Error al subir el archivo $nombreLimpio.";
+        }
     }
 }
 ?>
