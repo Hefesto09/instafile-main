@@ -23,7 +23,7 @@
 
     <h1>Compartir archivos <sup class="beta">BETA</sup></h1>
     <div class="content">
-        <h3>Sube tus archivos y comparte este enlace temporal: <span>ibu.pe/??=<?php echo htmlspecialchars($carpetaNombre, ENT_QUOTES, 'UTF-8'); ?></span></h3>
+        <h3>Sube tus archivos y comparte este enlace temporal: <span>victorproyect.net.pe/??=<?php echo htmlspecialchars($carpetaNombre, ENT_QUOTES, 'UTF-8'); ?></span></h3>
         <div class="container">
             <div class="drop-area" id="drop-area">
                 <form action="" id="form" method="POST" enctype="multipart/form-data">
