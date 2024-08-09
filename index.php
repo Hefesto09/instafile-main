@@ -10,7 +10,7 @@ include('php/carpetasDesc.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compartir archivos</title>
     <script src="script/parametro.js"></script>
-    <link rel="stylesheet" href="estilos/estov3.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 
 <body>
