@@ -1,6 +1,6 @@
 <?php
-    $carpetaNombre = isset($_GET['?']) ? $_GET['?'] : '';
-    $carpetaRuta = "./descarga/" . $carpetaNombre;
+$carpetaNombre = isset($_GET['?']) ? $_GET['?'] : '';
+$carpetaRuta = "./descarga/" . $carpetaNombre;
 
 try {
 
@@ -10,14 +10,10 @@ try {
     } else {
         $mensaje = "La carpeta '$carpetaNombre' ya existe.";
     }
-
     include('php/subir.php');
     include('php/eliminarArchivo.php');
-
-    
 } catch (\Exception $e) {
     $mensaje = "Error: " . htmlspecialchars($e->getMessage());
 }
-
 
 ?>
