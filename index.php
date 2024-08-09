@@ -17,11 +17,11 @@ include('php/carpetasDesc.php')
     <header>
         <nav>
             <ul>
-                <a href="victorproyect.net.pe">
+                <a href="https://rosalesrevolution.com">
                     <li id="logo"><img src="img/logo.webp" alt="Logo"></li>
                 </a>
                 <div class="links-derecha">
-                    <li id="info"><a href="subir.html">INFO</a></li>
+                    <li id="info"><a href="#">INFO</a></li>
                 </div>
             </ul>
         </nav>
@@ -34,7 +34,7 @@ include('php/carpetasDesc.php')
                 <?php endif; ?>
                 <h1>Compartir archivos <sup class="beta">BETA</sup></h1>
                 <p>comparte este enlace temporal: </p>
-                <span id="url">victorproyect.net.pe/??=<?php echo htmlspecialchars($carpetaNombre, ENT_QUOTES, 'UTF-8'); ?></span>
+                <span id="url">rosalesrevolution.com/??=<?php echo htmlspecialchars($carpetaNombre, ENT_QUOTES, 'UTF-8'); ?></span>
                 <button id="botoncopiar" onclick="copiarURL()">copiar</button>
                 <div class="container">
                     <div class="drop-area" id="drop-area">
