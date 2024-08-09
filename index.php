@@ -57,6 +57,7 @@ include('php/carpetasDesc.php')
     </main>
 
     <footer>
+        <br>
         <p>©Copyright 2024 Rosales</p>
     </footer>
 </body>
